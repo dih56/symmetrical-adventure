@@ -3,87 +3,116 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>meu portfolio</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projeto dragonn ball- DLS</title>
 
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <link rel="stylesheet" href="./src/css/estilo.css">
+
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-
-
-    <header class="cabecalho">
-        <h1>Diego Dev</h1>
-        <p class="subtitulo">desenvolvedor frontend</p>
-
-        <img class="foto-perfil" src="./src/imagem/potfolio.jpg" alt="foto de Diego">
-    </header>
-
-    <main class="conteudo-principal">
-        <div class="secao sobre-mim">
-            <h2 class="titulo-secao">sobre-mim</h2>
-            <p>Fala aí! Eu sou o Diego, um apaixonado por tecnologia que descobriu há uns 5 anos que sites e jogos são criados com programação — e desde então, nunca mais larguei essa ideia.
-
-                Sou daqueles que curte de tudo: desde games clássicos até os mais modernos, e se tem tecnologia no meio, eu tô mexendo!
-                
-                Meu sonho sempre foi trabalhar com internet e viver como programador profissional. Estou nessa jornada estudando por conta própria, fazendo cursos online e me dedicando pra virar um dev de verdade. Cada linha de código me aproxima mais do meu objetivo — e tô curtindo cada segundo dessa caminhada!</p>
+    <main class="personagens">
+    
+    <div class="personagem selecionado">
+                <picture>
+                    <source srcset="./src/imagens/bg-cyberstorm.png" media="(min-width: 768px)" />
+                    <img class="imagem" src="./src/imagens/bg-cyberstorm-mobile.png" alt="Personagem Cyberstorm" />
+                </picture>
+                <div class="conteudo">
+                    <h2 class="nome-personagem">Cyberstorm</h2>
+                    <p class="descricao">Kael Takeda, conhecido no submundo digital como "Cyberstorm", é um programador
+                        prodígio especializado em segurança cibernética e inteligência artificial. Com um intelecto afiado e
+                        reflexos rápidos, ele domina linguagens de programação como se fossem extensões de sua própria
+                        mente.</p>
         </div>
+    </div>
 
-        <div class="linguagens">
-            <h2 class="titulo-secao">Minhas Linguagens</h2>
-
-            <div class="botoes-linguagens">
-                <button class="botao-linguagem selecionado" data-linguagem="html">HTML</button>
-                <button class="botao-linguagem" data-linguagem="css">CSS</button>
-                <button class="botao-linguagem" data-linguagem="js">JavaScript</button>
-            </div>
-
-            <div class="conteudos-linguagens">
-                <div class="conteudo ativo" id="html">
-                    <h3>HTML</h3>
-                    <p>Linguagem de marcação usada para estruturar o conteúdo da web.</p>
-                </div>
-
-                <div class="conteudo" id="css">
-                    <h3>CSS</h3>
-                    <p>Folhas de estilo que controlam o visual (cores, layout, fontes, etc).</p>
-                </div>
-
-                <div class="conteudo" id="js">
-                    <h3>JavaScript</h3>
-                    <p>Linguagem de programação que dá vida à página — interatividade, animações, etc.</p>
-                </div>
+        <div class="personagem">
+            <picture>
+                <source srcset="./src/imagens/bg-codepixie.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-codepixie-mobile.png" alt="Personagem CodePixie" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">CodePixie</h2>
+                <p class="descricao">Lía Nakamura, conhecida como "CodePixie", é uma programadora genial que domina o
+                    desenvolvimento de algoritmos e inteligência artificial. Com um talento nato para decifrar padrões,
+                    ela cria sistemas inovadores e protege dados sensíveis de ameaças digitais.</p>
             </div>
         </div>
 
+        <div class="personagem">
+            <picture>
+                <source srcset="./src/imagens/bg-hexblade.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-hexblade-mobile.png" alt="Personagem HexBlade" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">HexBlade</h2>
+                <p class="descricao">Ryo Tanaka, conhecido como "HexBlade", é um hacker habilidoso que opera nas sombras
+                    do ciberespaço. Mestre em engenharia reversa e criptografia, ele combina força bruta e inteligência
+                    afiada para quebrar firewalls impenetráveis.</p>
+            </div>
+        </div>
+        <div class="personagem">
+            <picture>
+                <source srcset="./src/imagens/bg-neonpulse.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-neonpulse-mobile.png" alt="Personagem NeonPulse" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">NeonPulse</h2>
+                <p class="descricao">NeonPulse Ayla Vega, conhecida como "NeonPulse", é uma prodígio da programação
+                    espacial. Criada em uma estação orbital, ela domina linguagens de código como se fossem sua segunda
+                    língua. Especialista em inteligência artificial e segurança cibernética.</p>
+            </div>
+        </div>
 
-        <div class="secao projeto">
-            <h2 class="titulo-secao">projetos</h2>
-            <p>Em breve...</p>
+        <div class="personagem">
+            <picture>
+                <source srcset="./src/imagens/bg-codebreaker.png" media="(min-width: 768px)" />
+                <img class="imagem" src="./src/imagens/bg-codebreaker-mobile.png" alt="Personagem Codebreaker" />
+            </picture>
+            <div class="conteudo">
+                <h2 class="nome-personagem">Codebreaker</h2>
+                <p class="descricao">No coração de uma estação espacial abandonada, Orion Vex, um ex-engenheiro
+                    cibernético, busca desvendar um código perdido há séculos. Dizem que esse código guarda o segredo
+                    para uma tecnologia ancestral capaz de redefinir a inteligência artificial.</p>
+            </div>
         </div>
     </main>
+    <ul class="botoes">
+            <li>
+                <button  class="botao cyberstorm selecionado">
+                    <img src="./src/imagens/icone-cyberstorm.png" alt="Ícone Cyberstorm" />
+                </button>
+            </li>
+            <li>
+                <button class="botao codepixie">
+                    <img src="./src/imagens/icone-codepixie.png" alt="Ícone CodePixie" />
+                </button>
+            </li>
+            <li>
+                <button class="botao hexblade">
+                    <img src="./src/imagens/icone-hexblade.png" alt="Ícone Hexblade" />
+                </button>
+            </li>
+            <li>
+                <button class="botao neonpulse">
+                    <img src="./src/imagens/icone-neonpulse.png" alt="Ícone Neonpulse" />
+                </button>
+            </li>
+            <li>
+                <button class="botao codebreaker">
+                    <img src="./src/imagens/icone-codebreaker.png" alt="Ícone Codebreaker" />
+                </button>
+            </li>
+        </ul>
 
-
-
-    <footer class=" rodape">
-        <p>&copy; 2025 - Diego Dev</p>
-    </footer>
-
-    <div class="icones-flutuantes">
-        <a href="https://wa.me/5577999834426" target="_blank" class="icone whatsapp">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
-        </a>
-        <a href="https://instagram.com/dihsouza_ofc" target="_blank" class="icone instagram">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
-        </a>
-        <a href="mailto:diegoxiaomi56@gmail.com" class="icone email">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="E-mail">
-        </a>
-      </div>      
-      
-
-    <script src="./src/script.js"></script>
-
+    <script src="./src/js/index.js"></script>
 </body>
+
 </html>
